@@ -10,8 +10,8 @@
 
 @interface Case3ViewController ()
 
-@property (nonatomic, weak) IBOutlet UIView *superView;
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint *superViewWidthConstraint;
+@property (nonatomic, strong) UIView *superView;
+@property (nonatomic, strong) MASConstraint *superViewWidthConstraint;
 @property (nonatomic, strong) UIView *childView;
 @property (nonatomic, assign) CGFloat maxWidth;
 
@@ -23,7 +23,15 @@
 
 - (IBAction)modifyContainerViewWidth:(UISlider *)sender {
     if (sender.value) {
-        _superViewWidthConstraint.constant = sender.value * _maxWidth;
+        CGFloat newWidth = _maxWidth * sender.value;
+        
+        // References
+        _superViewWidthConstraint.equalTo(@(newWidth));
+        
+        // mas_updateConstraints
+        [_superView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@(newWidth));
+        }];
     }
 }
 
@@ -31,18 +39,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _maxWidth = self.view.frame.size.width - 32;
 
     [self initViews];
-    
-    _maxWidth = _superViewWidthConstraint.constant;
 }
 
 - (void)initViews {
+    _superView = [UIView new];
+    _superView.backgroundColor = [UIColor grayColor];
+    
+    [self.view addSubview:_superView];
+    
     _childView = [UIView new];
     _childView.backgroundColor = [UIColor redColor];
     
     [_superView addSubview:_childView];
     
+    [_superView mas_makeConstraints:^(MASConstraintMaker *make) {
+        _superViewWidthConstraint =  make.width.equalTo(@(_maxWidth));
+        
+        make.height.equalTo(@(50));
+        make.top.equalTo(self.view.mas_top).with.offset(200);
+        make.left.equalTo(self.view.mas_left).with.offset(16);
+    }];
     
     [_childView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.equalTo(_childView.superview.mas_height);

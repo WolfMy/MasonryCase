@@ -190,27 +190,11 @@
                                     <action selector="modifyContainerViewWidth:" destination="Egs-7y-khA" eventType="valueChanged" id="Ble-hf-Jp6"/>
                                 </connections>
                             </slider>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bp5-LB-wal">
-                                <rect key="frame" x="16" y="185" width="358" height="50"/>
-                                <color key="backgroundColor" systemColor="separatorColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="358" id="bjy-9c-0gD"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ma9-bC-9MB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="bp5-LB-wal" secondAttribute="bottom" constant="609" id="JVM-dm-FD8"/>
-                            <constraint firstItem="bp5-LB-wal" firstAttribute="top" secondItem="Ma9-bC-9MB" secondAttribute="top" constant="97" id="Wsc-1F-mAy"/>
-                            <constraint firstItem="bp5-LB-wal" firstAttribute="leading" secondItem="8yt-ve-k0v" secondAttribute="leadingMargin" id="gn7-1B-0AL"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mtd-be-TPJ"/>
-                    <connections>
-                        <outlet property="superView" destination="bp5-LB-wal" id="lGe-If-ENA"/>
-                        <outlet property="superViewWidthConstraint" destination="bjy-9c-0gD" id="ix3-PP-1Gz"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drC-Vs-gV8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
