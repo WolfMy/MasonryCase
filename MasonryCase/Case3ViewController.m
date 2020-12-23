@@ -28,10 +28,10 @@
         // References
         _superViewWidthConstraint.equalTo(@(newWidth));
         
-        // mas_updateConstraints
-        [_superView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.width.equalTo(@(newWidth));
-        }];
+//        // mas_updateConstraints
+//        [_superView mas_updateConstraints:^(MASConstraintMaker *make) {
+//            make.width.equalTo(@(newWidth));
+//        }];
     }
 }
 
