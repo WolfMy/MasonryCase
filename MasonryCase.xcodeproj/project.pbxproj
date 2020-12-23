@@ -14,14 +14,14 @@
 		2BAB06C7259091E0005F883A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BAB06C6259091E0005F883A /* Assets.xcassets */; };
 		2BAB06CA259091E0005F883A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BAB06C8259091E0005F883A /* LaunchScreen.storyboard */; };
 		2BAB06CD259091E0005F883A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB06CC259091E0005F883A /* main.m */; };
-		2BAB07222591FC41005F883A /* Case1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB07212591FC41005F883A /* Case1ViewController.m */; };
 		2BAB073025920542005F883A /* Case2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB072F25920542005F883A /* Case2ViewController.m */; };
-		2BAB073725922279005F883A /* Case3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB073625922279005F883A /* Case3ViewController.m */; };
 		2BAB0A6225933DD4005F883A /* Case4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB0A6125933DD4005F883A /* Case4ViewController.m */; };
 		2BAB0A6C25933FA8005F883A /* Case4Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB0A6B25933FA8005F883A /* Case4Cell.m */; };
 		2BAB0A752593455E005F883A /* Case4DataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB0A742593455E005F883A /* Case4DataEntity.m */; };
 		2BAB0A79259349EF005F883A /* Case4DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB0A78259349EF005F883A /* Case4DataSource.m */; };
 		2BAB0A8225935856005F883A /* NSString+Repeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB0A8125935856005F883A /* NSString+Repeat.m */; };
+		2BAB0A8C259372D0005F883A /* Case1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB0A8B259372D0005F883A /* Case1ViewController.m */; };
+		2BAB0A91259372D7005F883A /* Case3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB0A8F259372D7005F883A /* Case3ViewController.m */; };
 		C452009B3A53FF7C06E6C927 /* libPods-MasonryCase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB8A2194D23F9DBCFD247DE /* libPods-MasonryCase.a */; };
 /* End PBXBuildFile section */
 
@@ -38,12 +38,8 @@
 		2BAB06C9259091E0005F883A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BAB06CB259091E0005F883A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BAB06CC259091E0005F883A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2BAB07202591FC41005F883A /* Case1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Case1ViewController.h; sourceTree = "<group>"; };
-		2BAB07212591FC41005F883A /* Case1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Case1ViewController.m; sourceTree = "<group>"; };
 		2BAB072E25920542005F883A /* Case2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Case2ViewController.h; sourceTree = "<group>"; };
 		2BAB072F25920542005F883A /* Case2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Case2ViewController.m; sourceTree = "<group>"; };
-		2BAB073525922279005F883A /* Case3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Case3ViewController.h; sourceTree = "<group>"; };
-		2BAB073625922279005F883A /* Case3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Case3ViewController.m; sourceTree = "<group>"; };
 		2BAB0A6025933DD4005F883A /* Case4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Case4ViewController.h; sourceTree = "<group>"; };
 		2BAB0A6125933DD4005F883A /* Case4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Case4ViewController.m; sourceTree = "<group>"; };
 		2BAB0A6A25933FA8005F883A /* Case4Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Case4Cell.h; sourceTree = "<group>"; };
@@ -54,6 +50,10 @@
 		2BAB0A78259349EF005F883A /* Case4DataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Case4DataSource.m; sourceTree = "<group>"; };
 		2BAB0A8025935856005F883A /* NSString+Repeat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Repeat.h"; sourceTree = "<group>"; };
 		2BAB0A8125935856005F883A /* NSString+Repeat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Repeat.m"; sourceTree = "<group>"; };
+		2BAB0A8A259372D0005F883A /* Case1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case1ViewController.h; sourceTree = "<group>"; };
+		2BAB0A8B259372D0005F883A /* Case1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case1ViewController.m; sourceTree = "<group>"; };
+		2BAB0A8F259372D7005F883A /* Case3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case3ViewController.m; sourceTree = "<group>"; };
+		2BAB0A90259372D7005F883A /* Case3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case3ViewController.h; sourceTree = "<group>"; };
 		45F80BD1E4B4975373227AFF /* Pods-MasonryCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryCase.debug.xcconfig"; path = "Target Support Files/Pods-MasonryCase/Pods-MasonryCase.debug.xcconfig"; sourceTree = "<group>"; };
 		558D05E81D8BA8E9AE76D45F /* Pods-MasonryCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryCase.release.xcconfig"; path = "Target Support Files/Pods-MasonryCase/Pods-MasonryCase.release.xcconfig"; sourceTree = "<group>"; };
 		EAB8A2194D23F9DBCFD247DE /* libPods-MasonryCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryCase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,10 +92,10 @@
 		2BAB06B9259091DF005F883A /* MasonryCase */ = {
 			isa = PBXGroup;
 			children = (
-				2BAB0A5F25933DC1005F883A /* Case4 */,
-				2BAB07342592225A005F883A /* Case3 */,
+				2BAB0A89259372D0005F883A /* Case1 */,
 				2BAB072D2592052B005F883A /* Case2 */,
-				2BAB071F2591FBCF005F883A /* Case1 */,
+				2BAB0A8E259372D7005F883A /* Case3 */,
+				2BAB0A5F25933DC1005F883A /* Case4 */,
 				2BAB06BA259091DF005F883A /* AppDelegate.h */,
 				2BAB06BB259091DF005F883A /* AppDelegate.m */,
 				2BAB06BD259091DF005F883A /* SceneDelegate.h */,
@@ -111,15 +111,6 @@
 			path = MasonryCase;
 			sourceTree = "<group>";
 		};
-		2BAB071F2591FBCF005F883A /* Case1 */ = {
-			isa = PBXGroup;
-			children = (
-				2BAB07202591FC41005F883A /* Case1ViewController.h */,
-				2BAB07212591FC41005F883A /* Case1ViewController.m */,
-			);
-			name = Case1;
-			sourceTree = "<group>";
-		};
 		2BAB072D2592052B005F883A /* Case2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,15 +118,6 @@
 				2BAB072F25920542005F883A /* Case2ViewController.m */,
 			);
 			path = Case2;
-			sourceTree = "<group>";
-		};
-		2BAB07342592225A005F883A /* Case3 */ = {
-			isa = PBXGroup;
-			children = (
-				2BAB073525922279005F883A /* Case3ViewController.h */,
-				2BAB073625922279005F883A /* Case3ViewController.m */,
-			);
-			name = Case3;
 			sourceTree = "<group>";
 		};
 		2BAB0A5F25933DC1005F883A /* Case4 */ = {
@@ -154,6 +136,25 @@
 			);
 			path = Case4;
 			sourceTree = "<group>";
+		};
+		2BAB0A89259372D0005F883A /* Case1 */ = {
+			isa = PBXGroup;
+			children = (
+				2BAB0A8A259372D0005F883A /* Case1ViewController.h */,
+				2BAB0A8B259372D0005F883A /* Case1ViewController.m */,
+			);
+			path = Case1;
+			sourceTree = "<group>";
+		};
+		2BAB0A8E259372D7005F883A /* Case3 */ = {
+			isa = PBXGroup;
+			children = (
+				2BAB0A8F259372D7005F883A /* Case3ViewController.m */,
+				2BAB0A90259372D7005F883A /* Case3ViewController.h */,
+			);
+			name = Case3;
+			path = MasonryCase/Case3;
+			sourceTree = SOURCE_ROOT;
 		};
 		CA8CC47F3D641C37A1F9CBC9 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -267,16 +268,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BAB073725922279005F883A /* Case3ViewController.m in Sources */,
 				2BAB06C2259091DF005F883A /* MainViewController.m in Sources */,
-				2BAB07222591FC41005F883A /* Case1ViewController.m in Sources */,
 				2BAB0A752593455E005F883A /* Case4DataEntity.m in Sources */,
+				2BAB0A91259372D7005F883A /* Case3ViewController.m in Sources */,
 				2BAB06BC259091DF005F883A /* AppDelegate.m in Sources */,
 				2BAB073025920542005F883A /* Case2ViewController.m in Sources */,
 				2BAB06CD259091E0005F883A /* main.m in Sources */,
 				2BAB06BF259091DF005F883A /* SceneDelegate.m in Sources */,
 				2BAB0A8225935856005F883A /* NSString+Repeat.m in Sources */,
 				2BAB0A79259349EF005F883A /* Case4DataSource.m in Sources */,
+				2BAB0A8C259372D0005F883A /* Case1ViewController.m in Sources */,
 				2BAB0A6225933DD4005F883A /* Case4ViewController.m in Sources */,
 				2BAB0A6C25933FA8005F883A /* Case4Cell.m in Sources */,
 			);
