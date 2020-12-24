@@ -11,6 +11,7 @@
 
 @interface Case4ViewController ()
 
+@property (nonatomic, weak) IBOutlet UITableView *autoHeightTableView;
 @property (nonatomic, strong) Case4DataSource *datasource;
 
 @end
@@ -21,6 +22,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _datasource = [[Case4DataSource alloc] init];
+    
+    // 注册Cell
+    [_autoHeightTableView registerClass:[Case4Cell class] forCellReuseIdentifier:NSStringFromClass([Case4Cell class])];
+    // 让Cell里的内容决定每个Cell的高度
+    _autoHeightTableView.rowHeight = UITableViewAutomaticDimension;
+    _autoHeightTableView.estimatedRowHeight = 50;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

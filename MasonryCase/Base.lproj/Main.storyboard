@@ -196,9 +196,20 @@
                                     <action selector="addLabelContent:" destination="FGf-H9-BO3" eventType="valueChanged" id="AwK-cc-bLA"/>
                                 </connections>
                             </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="并排两个label，宽度由内容决定。父级View宽度不够时，优先显示左边label的内容" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbr-jj-Wlx">
+                                <rect key="frame" x="22" y="108.00000000000001" width="346" height="40.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BuS-1Q-LJg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BuS-1Q-LJg" firstAttribute="trailing" secondItem="bbr-jj-Wlx" secondAttribute="trailing" constant="22" id="2Cs-L6-E5E"/>
+                            <constraint firstItem="bbr-jj-Wlx" firstAttribute="leading" secondItem="BuS-1Q-LJg" secondAttribute="leading" constant="22" id="7aW-dA-zb7"/>
+                            <constraint firstItem="bbr-jj-Wlx" firstAttribute="top" secondItem="BuS-1Q-LJg" secondAttribute="top" constant="20" id="GyE-aj-fE3"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="N0g-GR-nJH"/>
                     <connections>
@@ -224,9 +235,20 @@
                                     <action selector="modifyContainerViewWidth:" destination="Egs-7y-khA" eventType="valueChanged" id="Ble-hf-Jp6"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="子View的宽度始终是父级View的一半" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPv-iZ-hvw">
+                                <rect key="frame" x="22" y="108" width="346" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ma9-bC-9MB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zPv-iZ-hvw" firstAttribute="leading" secondItem="Ma9-bC-9MB" secondAttribute="leading" constant="22" id="DIt-GT-F6x"/>
+                            <constraint firstItem="zPv-iZ-hvw" firstAttribute="top" secondItem="Ma9-bC-9MB" secondAttribute="top" constant="20" id="Ioa-6r-41i"/>
+                            <constraint firstAttribute="trailing" secondItem="zPv-iZ-hvw" secondAttribute="trailing" constant="22" id="OfP-qu-nUu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mtd-be-TPJ"/>
                 </viewController>
@@ -288,9 +310,20 @@
                                     <action selector="showOrHide:" destination="oge-nN-sRt" eventType="valueChanged" id="mqd-3g-YE9"/>
                                 </connections>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="四个ImageView整体居中，可以任意显示、隐藏" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAM-2e-ZXW">
+                                <rect key="frame" x="22" y="108" width="346" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xag-Hd-hUc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rAM-2e-ZXW" firstAttribute="top" secondItem="xag-Hd-hUc" secondAttribute="top" constant="20" id="30d-n4-8zN"/>
+                            <constraint firstItem="xag-Hd-hUc" firstAttribute="trailing" secondItem="rAM-2e-ZXW" secondAttribute="trailing" constant="22" id="3oy-2C-33p"/>
+                            <constraint firstItem="rAM-2e-ZXW" firstAttribute="leading" secondItem="xag-Hd-hUc" secondAttribute="leading" constant="22" id="sGB-xX-Nla"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="A5y-rm-h4j"/>
                 </viewController>
@@ -306,9 +339,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动态高度的UITableViewCell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L1I-we-yWW">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Case4Cell" rowHeight="64" id="oUZ-gf-z3A" customClass="Case4Cell">
-                                <rect key="frame" x="0.0" y="28" width="390" height="64"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="oUZ-gf-z3A" customClass="Case4Cell">
+                                <rect key="frame" x="0.0" y="72" width="390" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oUZ-gf-z3A" id="YBv-Hr-UbD">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="64"/>
@@ -322,6 +362,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="vLX-Xe-LWZ"/>
+                    <connections>
+                        <outlet property="autoHeightTableView" destination="9bK-GT-8Li" id="j3d-qk-QKZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZO-S8-Lc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

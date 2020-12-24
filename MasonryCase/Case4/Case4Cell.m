@@ -23,8 +23,6 @@ static const CGFloat IMAGE_SIZE = 64;
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    
-    [self initCellViews];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -33,22 +31,20 @@ static const CGFloat IMAGE_SIZE = 64;
     // Configure the view for the selected state
 }
 
-//// dequeueReusableCellWithIdentifier:
-//// If you registered a class for the specified identifier and a new cell must be created, this method initializes the cell by calling its initWithStyle:reuseIdentifier: method.
-//// 调用UITableView的dequeueReusableCellWithIdentifier方法时会通过这个方法初始化Cell
-//- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-//    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-//    if (self) {
-//        [self initCellViews];
-//    }
-//    return self;
-//}
+// 调用UITableView的dequeueReusableCellWithIdentifier方法时会通过这个方法初始化Cell，前提是UItableView调用了registerClass:forCellReuseIdentifier:方法注册了Cell
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self initCellViews];
+    }
+    return self;
+}
 
 - (void)initCellViews {
 //    NSLog(@"initCellViews");
-    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.greaterThanOrEqualTo(@(IMAGE_SIZE));
-    }];
+//    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.height.greaterThanOrEqualTo(@(IMAGE_SIZE));
+//    }];
     
     // 头像
     _avatarImageView = [UIImageView new];
