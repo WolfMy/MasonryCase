@@ -11,7 +11,8 @@
 
 @interface Case4ViewController ()
 
-@property (nonatomic, weak) IBOutlet UITableView *autoHeightTableView;
+//@property (nonatomic, weak) IBOutlet UITableView *autoHeightTableView;
+@property (nonatomic, strong) UITableView *autoHeightTableView;
 @property (nonatomic, strong) Case4DataSource *datasource;
 
 @end
@@ -20,8 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     _datasource = [[Case4DataSource alloc] init];
+    
+    // 创建TableView并与TableViewController绑定
+    _autoHeightTableView = [[UITableView alloc] init];
+    self.tableView = _autoHeightTableView;
     
     // 注册Cell
     [_autoHeightTableView registerClass:[Case4Cell class] forCellReuseIdentifier:NSStringFromClass([Case4Cell class])];
